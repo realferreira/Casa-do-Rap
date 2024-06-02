@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@300;400;500;600;700&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Karla', sans-serif;
+}
+body {
+  color: #fff;
+}
+.container {
+  width: 100%;
+  height: 100vh;
+  background-image: url(back.png);
+  background-position: center;
+  background-size: cover;
+  padding-top: 35px;
+  padding-left: 8%;
+  padding-right: 8%;
+}
+nav {
+  padding: 10px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.logo {
+  display: flex;
+  align-items: center;
+}
+.logo a {
+  font-size: 40px;
+  text-decoration: none;
+}
+.buttons {
+  display: flex;
+  align-items: center;
+  margin-left: 20px; /* Espaço entre logo e botões */
+}
+span {
+  color: #f9004d;
+}
+nav ul {
+  display: flex;
+  gap: 15px;
+  margin-left: auto;
+  flex-wrap: wrap;
+}
+nav ul li {
+  list-style: none;
+}
+nav ul li a {
+  text-decoration: none;
+  padding: 9px 15px;
+  transition: 0.5s;
+  border-radius: 20px;
+}
+nav ul li a:hover {
+  background-color: #f9004d;
+  color: #fff;
+}
+.login {
+  text-decoration: none;
+  margin-right: 15px;
+  font-size: 18px;
+  padding: 9px 25px;
+  background: transparent;
+  transition: 0.5s;
+  border-radius: 20px; 
+}
+.login:hover {
+  background-color: #f9004d;
+  color: #fff;
+}
+.btn {
+  background: #000;
+  border-radius: 20px;
+  padding: 9px 25px;
+  text-decoration: none;
+  transition: 0.5s;
+  font-size: 18px;
+}
+.btn:hover {
+  background-color: #f9004d;
+  color: #fff;
+}
+.content {
+  margin-top: 10%;
+  max-width: 600px;
+}
+.content h2 {
+  font-size: 60px;
+}
+.content p {
+  margin-top: 10px;
+  line-height: 25px;
+}
+a {
+  color: #fff;
+}
+.link {
+  margin-top: 30px;
+}
+.hire {
+  color: #000;
+  text-decoration: none;
+  background: #fff;
+  padding: 9px 25px;
+  font-weight: bold;
+  border-radius: 6px;
+  transition: 0.5s;
+}
+.link .hire:hover {
+  background: transparent;
+  border: 1px solid #fff;
+  color: #fff;
+}
+
+/* Estilos para dispositivos menores */
+@media (max-width: 768px) {
+  .logo a {
+    font-size: 30px;
+  }
+  .buttons {
+    margin-left: 10px;
+  }
+  nav ul {
+    gap: 10px;
+  }
+  nav ul li a {
+    padding: 6px 10px;
+    font-size: 14px;
+  }
+  .login {
+    font-size: 14px;
+    padding: 6px 10px;
+  }
+  .btn {
+    font-size: 14px;
+    padding: 6px 10px;
+  }
+  .content h2 {
+    font-size: 48px;
+  }
+  .content p {
+    font-size: 16px;
+    line-height: 22px;
+  }
+  .link .hire {
+    padding: 7px 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+  .logo a {
+    font-size: 24px;
+  }
+  .buttons {
+    flex-direction: column;
+    margin-left: 0;
+  }
+  .buttons a {
+    margin-top: 5px;
+  }
+  nav ul {
+    gap: 5px;
+    margin-top: 10px;
+  }
+  nav ul li a {
+    padding: 4px 8px;
+    font-size: 12px;
+  }
+  .login {
+    font-size: 12px;
+    padding: 4px 8px;
+  }
+  .btn {
+    font-size: 12px;
+    padding: 4px 8px;
+  }
+  .content {
+    margin-top: 20%;
+  }
+  .content h2 {
+    font-size: 36px;
+  }
+  .content p {
+    font-size: 14px;
+  }
+  .link .hire {
+    padding: 5px 15px;
+  }
+}
